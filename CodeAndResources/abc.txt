@@ -1,0 +1,26 @@
+try {
+			
+					
+				PreparedStatement ps2=c.prepareStatement("select name,id,num_case from policeofficials"); 
+			               // ps2.setString(1,s8);
+                                       // ps2.setString(2,"Inspector");
+                                        ResultSet rs2=ps2.executeQuery(); 
+                                        p_id=rs2.getInt(2);
+                                        name=rs2.getString(1);
+                                        min=rs2.getInt(3); 
+                                        //p_case=rs2.getString(4);
+                                       /* while(rs2.next())
+                                        {  
+                                            { p_id=rs2.getInt(2);
+                                              name=rs2.getString(1);
+                                              min=rs2.getInt(3);
+
+                                             
+                                             }
+                                         }*/
+/*String case=case+","+y ; 
+PreparedStatement ps4=c.prepareStatement("update POLICEOFFICIALS set case_assigned=case where id=p_id");
+ps4.executeUpdate(); 
+
+PreparedStatement ps5=c.prepareStatement("update CFIR set officer_id=p_id and officer_name=name where id=y");
+ps5.executeUpdate(); */

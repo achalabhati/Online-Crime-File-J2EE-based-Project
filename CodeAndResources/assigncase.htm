@@ -1,0 +1,226 @@
+<html>
+
+<head>
+ <script type="text/javascript">
+function valid()
+{
+var s1=document.f1.T1.value;
+
+if(s1==null||s1=="")
+{
+alert("Please enter the Officer ID");
+return false;
+}
+var s2=document.f1.T2.value;
+
+if(s2==null||s2=="")
+{
+alert("Please enter the Case ID");
+return false;
+}
+
+var s3=document.f1.T3.value;
+
+if(s3==null||s3=="")
+{
+alert("Please enter the Officer Name");
+return false;
+}
+}
+  </script>
+<style type="text/CSS">
+        body{
+        background-color:lightgrey;
+        }
+.s1
+{
+    font-family:Arial;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: blink;
+    background-color: #D2691E;
+text-align: center;
+}
+
+.s3
+{
+   margin-left: 12px;
+background-color: #dc143c;
+width: 300px;
+font-size: 25px;
+position: absolute;
+top: 40%;
+}
+.s6
+{
+   margin-left: 12px;
+background-color: #ff1493;
+width: 300px;
+font-size: 20px;
+position: absolute;
+top:47%;
+}
+
+
+a.one:link, a.one:visited
+{
+    display: block;
+    font-weight: bold;
+    color: white;
+    background-color:black;
+    width: 155px;
+    text-align: center;
+    text-decoration:none;
+    padding: 5px;
+    font-size: 20px;
+    }
+    a.one:hover
+    {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    background-color:grey;
+    width: 173px;
+    text-align: center;
+    text-decoration:none;
+
+
+}
+a.two:link, a.two:visited
+{
+    display: block;
+    font-weight: bold;
+    color: fuchsia;
+    background-color:black;
+    width: 270px;
+    text-align: center;
+    text-decoration:none;
+    padding: 5px;
+    font-size: 20px;
+    }
+ a.two:hover
+{
+display: block;
+    font-weight: bold;
+    color: fuchsia;
+    background-color:#483d8b;
+    width: 270px;
+    text-align: center;
+    text-decoration:underline;
+    padding: 5px;
+    font-size: 20px;
+}
+
+ </style>
+
+</head>
+<body bgcolor="#CCCCCC">
+<img alt="header" src="HEADER.jpg" height="140" width="1250" hspace="10" vspace="10">
+<table class="s2" bgcolor="black" height="73" >
+          <tr bgcolor="black">
+              <td height="69">
+                  <a class="one" href="index.htm"><img alt="" src="INDIA.jpg" height="25" hspace="5">Home</a></td>
+              <td height="69">
+                  <a class="one" href="aboutus.htm"><img alt="" src="INDIA.jpg" height="25" hspace="5">About Us</a></td>
+              <td height="69">
+                  <a class="one" href="contactus.html" ><img alt="" src="INDIA.jpg" height="25" hspace="5">Contact Us</a>
+              </td>
+              
+              <td height="69">
+                   <a class="one" href="loginm.htm"><img alt="" src="INDIA.jpg" height="25" hspace="5">User Login</a>
+              </td>
+              <td height="69"> <a class="one" href="loginad.htm"><img alt="" src="INDIA.jpg" height="25" hspace="5">Admin Login</a></td>
+
+          <td height="69"> <a class="one" href="officerlogin.htm"><img alt="" src="INDIA.jpg" height="25" hspace="5">OfficerLogin</a></td>
+<td height="69"> <a class="one" href="newuser.htm"><img alt="" src="INDIA.jpg" height="25" hspace="5">New User</a></td>
+
+<td height="69"> <a class="one" href="news.html"><img alt="" src="INDIA.jpg" height="25" hspace="5">News</a></td>
+          </tr> </table>
+
+
+
+
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber1" height="403">
+   <tr>
+    <td width="113%" colspan="2" height="55">
+    <p align="center"><font size="7" color="#800080">ASSIGN CASE</font></td>
+  </tr>
+   <form name="f1" method="POST" action="http://localhost:8081/ser/caseassignj.jsp" onSubmit="return valid()">
+
+  <tr>
+    <td width="46%" height="16">
+    <p align="center"><font color="#008000" size="4">Officer ID</font></td>
+    <td width="67%" height="16">
+    <p align="center">&nbsp;<input type="text" name="T1" size="20"></td>
+  </tr>
+
+  <tr>
+    <td width="46%" height="22">
+    <p align="center"><font size="4" color="#008000">Case Type</font></td>
+    <td width="67%" height="22">
+    <p align="center"><font color="#008000" size="4">&nbsp;Civil</font><input type="radio" value="civil" name="R1" checked>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008000" size="4"> 
+      Criminal</font><input type="radio" value="Criminal" name="R1"></td>
+  </tr>
+  <tr>
+    <td width="46%" height="24">
+    <p align="center"><font color="#008000" size="4">Case ID</font></td>
+    <td width="67%" height="24">
+    <p align="center"><input type="text" name="T2" size="20"></td>
+  </tr>
+  <tr>
+    <td width="46%" height="24">
+    <p align="center"><font color="#008000" size="4">Officer Name</font></td>
+    <td width="67%" height="24">
+    <p align="center"><input type="text" name="T3" size="20"></td>
+  </tr>
+
+  <tr>
+  <td width="46%" height="4">
+    <p align="center"><font color="#008000" size="4">Area</font></td>
+    <td width="67%" height="4">
+<p align="center"><select size="1" name="D1" dir="ltr">
+       <option>Babina</option>
+       <option>Badagaon</option>
+       <option>Barausagar</option>
+       <option>BHEL</option>
+       <option selected>Bundelkhand University</option>
+       <option>Chirgaon</option>
+       <option>Garotha</option>
+       <option>Kakarwai</option>
+       <option>Katra</option>
+       <option>Manik Chok</option>
+       <option>Math</option>
+       <option>Sadar bazar</option>
+       <option>Sipri</option>
+       </select></td>
+</tr><tr>
+ <td width="46%" height="52">
+<input type="submit" value="Submit" name="b1" style="float: right"></td>
+<td width="46%" height="52">
+<input type="reset" value="Reset" name="b1"></td>
+</td>
+</tr>
+</form>
+
+</table>
+
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber1">
+  
+</table>
+
+<div align="center">
+  <center>
+  <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="603" height="71" id="AutoNumber2">
+    
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>
